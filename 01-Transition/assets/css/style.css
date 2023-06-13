@@ -1,0 +1,51 @@
+section{
+    background-color: teal;
+    padding: 20px;
+    margin: 20px;
+}
+.transition{
+    transition: 2s;
+    transition: color 2s;
+    transition: background-color 2s;
+}
+.cssColor{
+    transition: 2s;
+}
+
+.bgClip{
+    border: 5px solid green;
+    border-radius: 10px;
+    height: 100px;
+    text-align: justify;
+    transition: 2s;
+    background-clip: content-box;
+    background-clip:padding-box;
+    background-clip:border-box;
+}
+.bgClip:hover{
+    
+    height: 50px;
+    text-align: center;
+}
+
+/* p3.html */
+
+.common{
+    width: 400px;
+    height: 100px;
+    margin: 20px;
+    background-color: crimson;
+    color: white;
+    transition: width 2s;
+}
+.common:hover{
+    width: 100px;
+    background-color: yellow;
+}
+#d1{transition-timing-function: linear;}
+#d2{transition-timing-function: ease-in;}
+#d3{transition-timing-function: ease-out;}
+#d4{transition-timing-function: Ease-in-out;}
+#d5{transition-timing-function: steps(6,jump-start);}
+#d6{transition-timing-function: ease;}
+#d7{transition-timing-function: cubic-bezier(0.5,0.7,0.8,0.1);}
