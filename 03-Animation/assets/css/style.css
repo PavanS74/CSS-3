@@ -1,0 +1,76 @@
+.commonAnimation{
+    padding: 20px;
+    border-radius: 5px;
+    margin: 30px;
+    height: 300px;
+}
+.commonAnimation>h1{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    text-shadow: 3px 3px 3px black;
+}
+.animation1{
+    background: black;
+    /* animation: pavan;
+    animation-duration: 10s;
+    animation-iteration-count: infinite; */
+    animation: pavan 10s infinite;
+}
+@keyframes pavan{
+    from{background:red;}
+    to{background: darkblue;}
+
+}
+.animation2{
+    /* background: url(../img/pexels-juan-vargas-5496515.jpg); */
+    background-size: 100%;
+    animation: animation_img 10s infinite;
+}
+@keyframes animation_img{
+    from{background: url(../img/pexels-juan-vargas-5496515.jpg) no-repeat top;color: red;}
+    to{background: url(../img/pexels-pixabay-235986\ \(1\).jpg) no-repeat bottom;color: rgb(8, 134, 44);}
+
+}
+.animation3{
+    /* background-image: url(../img/pexels-juan-vargas-5496515.jpg); */
+    background: red;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 5px;
+    color: white;
+    position: absolute;
+    animation: cssAnimation 5s infinite;
+}
+@keyframes cssAnimation{
+    0%{
+        top: 0px;
+        left: 0px;
+        background-color: red;
+        color: black;
+    }
+    25%{
+        top: 0px;
+        left: 600px;
+        background-color: rgb(60, 0, 255);
+        color: yellow;
+    }
+    50%{
+        top: 400px;
+        left: 600px;
+        background-color: rgb(0, 255, 34);
+        color: rgb(53, 27, 195);
+    }
+    75%{
+        top:400px;
+        left: 0px;
+        background-color: red;
+        color: black;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+        background-color: rgb(255, 0, 221);
+        color: rgb(0, 0, 0);
+    }
+}
